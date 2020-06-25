@@ -13,4 +13,6 @@ RUN reckon --help
 
 COPY helm2 /bin/helm
 
-ENTRYPOINT /bin/sh -c
+ENTRYPOINT ["/bin/sh", "-c"]
+
+CMD ["echo Hello from helm2-reckon"]
